@@ -62,6 +62,7 @@ public class ListenersTest extends Base {
 		driver.get("https://chromedriver.chromium.org/downloads");
 		System.out.println("test4 thread id is:" + Thread.currentThread().getId());
 		System.out.println("Title of the page is:" + driver.getTitle());
+		Assert.assertEquals(driver.getTitle(), "page title");
 	}
 
 }
